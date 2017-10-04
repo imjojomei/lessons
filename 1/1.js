@@ -55,10 +55,7 @@ const _fromYoungestToEldest = people.sort(function (p1, p2) {
 });
 
 _fromYoungestToEldest.forEach(function(person){
-	const li = document.createElement('li');
-	li.innerHTML = `${person.firstName} ${person.lastName}, ${person.age}`;
-	li.dataset.name = person.firstName;
-
+	const li = createLi(person);
 	asc.appendChild(li);
 });
 
@@ -69,21 +66,15 @@ const _fromEldestToYoungest = people.sort(function (p1, p2) {
 });
 
 _fromEldestToYoungest.forEach(function(person){
-	const li = document.createElement('li');
-	li.innerHTML = `${person.firstName} ${person.lastName}, ${person.age}`;
-	li.dataset.name = person.firstName;
-
+	const li = createLi(person);
 	desc.appendChild(li);
 });
 
 // Only Minor or Only Oldie
 
 const _only = people.map(function (person){
-	const li = document.createElement('li');
-		li.innerHTML = `${person.firstName} ${person.lastName}, ${person.age}`;
-		li.dataset.name = person.firstName;
+	const li = createLi(person);
 	if (person.age < 18){
-		
 		minors.appendChild(li);
 	}
 
@@ -96,10 +87,7 @@ const _only = people.map(function (person){
 // Full Info 
 
 people.forEach(function(person){
-	const li = document.createElement('li');
-	li.innerHTML = getFullInfo(person);
-	li.dataset.name = person.firstName;
-
+	const li = createLi(person);
 	full.appendChild(li);
 });
 
