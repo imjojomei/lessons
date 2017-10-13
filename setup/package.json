@@ -1,0 +1,26 @@
+{
+  "name": "setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "npm-run-all": "^4.1.1",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^4.1.1"
+  },
+  "scripts": {
+    "sass": "node-sass src/scss/main.scss -o dist/css --output-style compressed",
+    "postcss": "postcss -u autoprefixer -r dist/css/*",
+    "build-css": "npm run sass && npm run postcss",
+    "serve": "browser-sync start --server './' --files 'dist/css/main.css'",
+    "onchange": "onchange 'src/scss/**/*.scss' -- npm run build-css",
+    "watch": "npm-run-all -p serve onchange"
+  },
+  "author": "",
+  "license": "ISC"
+}
