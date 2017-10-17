@@ -6,7 +6,7 @@ const browserSync  = require('browser-sync').create();
 
 
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', ['sass'], function() {
     browserSync.init({
         server: {
             baseDir: "./"
