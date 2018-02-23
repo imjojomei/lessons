@@ -1,0 +1,91 @@
+<!doctype html>
+<head>
+  <title>Letter Frequency</title>
+  <style type="text/css">
+  ul.legend {padding:0}
+  ul.legend li {
+    display: inline-block;
+    border-top: 1px solid black;
+    margin: 3px;
+    padding: 5px;
+  }
+  .item {
+    display:inline-block;
+    width: 39px;
+  }
+  </style>
+</head>
+
+<body>
+<input type="text" id="word">
+<input type="button" value="Process" onclick="myProcess()">
+
+<div id="frequency_container"></div>
+
+<ul class="legend">
+  <li>0</li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+  <li>D</li>
+  <li>E</li>
+  <li>F</li>
+  <li>G</li>
+  <li>H</li>
+  <li>I</li>
+  <li>J</li>
+  <li>K</li>
+  <li>L</li>
+  <li>M</li>
+  <li>N</li>
+  <li>O</li>
+  <li>P</li>
+  <li>Q</li>
+  <li>R</li>
+  <li>S</li>
+  <li>T</li>
+  <li>U</li>
+  <li>V</li>
+  <li>W</li>
+  <li>X</li>
+  <li>Y</li>
+  <li>Z</li>
+  
+</ul>
+
+<script>
+function myProcess() {
+  const word = document.getElementById('word').value;
+  var legends = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+  var container = document.getElementById('frequency_container');
+  var freq = [];
+  for (var a=0; a<word.length; a++) {
+    var character = word.charAt(a);
+    container.innerHTML+=("<div id=row"+a+">");
+    for (var b=0; b<legends.length; b++) {
+       var element = document.getElementById('row'+a);
+       console.log(element);
+      if (character === legends[b]) {
+        element.innerHTML+=("<div class=item> * </div>");
+      } else {
+        element.innerHTML+=("<div class=item> &nbsp; </div>");
+      }
+    }
+  }
+}
+
+
+
+</script>
+</body>
+</html>
