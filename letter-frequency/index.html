@@ -11,7 +11,7 @@
   }
   .item {
     display:inline-block;
-    width: 39px;
+    width: 30px;
   }
   </style>
 </head>
@@ -64,8 +64,8 @@
 
 <script>
 function myProcess() {
-  const word = document.getElementById('word').value;
-  var legends = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var word = document.getElementById('word').value;
+  var legends = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
   var container = document.getElementById('frequency_container');
   var freq = [];
@@ -75,7 +75,7 @@ function myProcess() {
     for (var b=0; b<legends.length; b++) {
        var element = document.getElementById('row'+a);
        console.log(element);
-      if (character === legends[b]) {
+      if (character.toUpperCase() === legends[b] || character ===legends[b]) {
         element.innerHTML+=("<div class=item> * </div>");
       } else {
         element.innerHTML+=("<div class=item> &nbsp; </div>");
@@ -83,8 +83,6 @@ function myProcess() {
     }
   }
 }
-
-
 
 </script>
 </body>
