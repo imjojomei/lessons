@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html >
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	<meta charset="utf-8" />
+	<style type="text/css">
+		* {box-sizing: border-box;}
+		body {
+			background: pink;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.wrapper {
+			display: table;
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+		}
+
+		.form-container {
+			display: table-cell;
+   	 	vertical-align: middle;
+		}
+
+		.form {
+			background: white;
+			border-radius: 6px;
+			margin: 0 auto;
+			width: 500px;
+			padding: 40px;
+			box-shadow: 16px 30px 50px 3px #999;
+		}
+
+		.header { margin:  20px 0;}
+
+		h1 {
+			color: midnightblue;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		hr {
+			height: 10px;
+	    background: midnightblue;
+	    width: 70px;
+	    text-align: left;
+	    margin: 10px 0;
+		}
+
+		.form-details {
+			margin: 50px 0;
+		}
+
+		#password-container, #username-container {
+			margin: 30px 0;
+		}
+
+		label {
+			display: inline-block;
+			margin: 10px 0;
+			color: midnightblue;
+			font-weight: bold;
+		}
+
+		input {
+			display: inline-block;
+			width: 90%;
+			background: pink;
+			outline: none;
+			border: none;
+			font-size: 16px;
+			padding: 10px;
+		}
+
+		.border {
+			height: 4px;
+	    width: 90%;
+	    display: block;
+	    background: #9999;
+	    background-image: linear-gradient(#666666, #666666);
+		  background-position: 50% 50%;
+		  background-repeat: no-repeat;
+		  background-size: 0% 100%;
+		  transition: background-size .1s, color .1s;
+		}
+
+		.border.focus {
+			background-size: 100% 100%;
+		}
+
+		.border.valid {background: lightgreen;}
+		.border.invalid {background: hotpink;}
+
+		span.fas { 
+			width: 5%;
+			font-size: 24px;
+	    padding: 4px;
+	  }
+
+		.fa-check-circle:before {color: lightgreen;}
+
+		.fa-times-circle:before {color: hotpink;}
+
+		#error, #strength{
+			color: hotpink;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 12px;
+			margin-top: 5px;
+			position:absolute;
+		}
+
+		#strength.valid {color: lightgreen;}
+
+		.signup-container {
+			margin: 0 -40px -40px -40px;
+			background: lightgreen;
+			padding: 20px;
+			border-bottom-right-radius: 6px;
+			border-bottom-left-radius: 6px;
+		}
+
+		.signup {
+			display: block;
+			width: 100%;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript">
+
+		function usernameIcon() {
+			var spanIcon = document.getElementById("username-container").getElementsByClassName("fas")[0];
+			var invalidUsers = ["meichagas", "joanne", "hello"];
+			
+			var user = document.getElementById("username");
+			var error = document.getElementById("error");
+			var element = document.getElementsByClassName('border')[0];
+
+			user.addEventListener("keyup", function(){
+			  if (user.value === '') {
+					spanIcon.classList.remove("fa-times-circle");
+					spanIcon.classList.remove("fa-check-circle");
+					element.classList.remove("valid");
+					element.classList.remove("invalid");
+				} else {
+					var username = user.value;
+					for(var i=0; i<invalidUsers.length; i++) {
+						if(invalidUsers[i] === username) {
+							console.log('hello');
+						}
+						console.log(invalidUsers[i]);
+					}
+					
+					// if(user.value === 'meichagas') {
+					// 	spanIcon.classList.add("fa-times-circle");
+					// 	element.classList.add("invalid");
+					// 	error.innerHTML = "Username Taken";
+					// } else {
+					// 	spanIcon.classList.add("fa-check-circle");
+					// 	spanIcon.classList.remove("fa-times-circle");
+					// 	element.classList.add("valid");
+					// 	element.classList.remove("invalid");
+					// 	error.innerHTML = "";
+					// }
+				}
+			});
+		}
+
+		function addFocus(item){
+			var element = item.nextElementSibling.nextElementSibling;
+			element.classList.add("focus");
+		}
+
+		function removeFocus(item){
+			var element = item.nextElementSibling.nextElementSibling;
+			element.classList.remove("focus");
+		}
+
+	function checkPassStrength(item) {
+	    var spanIcon = document.getElementById("password-container").getElementsByClassName("fas")[0];
+	    var password = document.getElementById("password");
+	    var passwordInput = password.value;
+	    var element = item.nextElementSibling.nextElementSibling;
+
+	    password.addEventListener("keyup", function(){
+			  if (passwordInput === '') {
+					spanIcon.classList.remove("fa-times-circle");
+					spanIcon.classList.remove("fa-check-circle");
+					element.classList.remove("valid");
+					element.classList.remove("invalid");
+					strength.innerHTML = "";
+				} else {
+					var score = 0;
+			    var letters = new Object();
+			    for (var i=0; i<passwordInput.length; i++) {
+			      letters[passwordInput[i]] = (letters[passwordInput[i]] || 0) + 1;
+			      score += 5.0 / letters[passwordInput[i]];
+			    }
+
+			    var variations = {
+			      digits: /\d/.test(passwordInput),
+			      lower: /[a-z]/.test(passwordInput),
+			      upper: /[A-Z]/.test(passwordInput),
+			      nonWords: /\W/.test(passwordInput),
+			    }
+
+			    variationCount = 0;
+			    for (var check in variations) {
+			        variationCount += (variations[check] == true) ? 1 : 0;
+			    }
+
+			    score += (variationCount - 1) * 10;
+
+			    var totalScore = parseInt(score);
+			    console.log(totalScore);
+				
+			    if (totalScore > 80) {
+			    	strength.innerHTML = "Strong";
+			    } else if (totalScore > 60) {
+			    	strength.innerHTML = "Decent";
+			    	spanIcon.classList.add("fa-check-circle");
+						spanIcon.classList.remove("fa-times-circle");
+						element.classList.add("valid");
+						element.classList.remove("invalid");
+						element.nextElementSibling.classList.add("valid");
+			    } else if (totalScore >= 0) {
+			    	strength.innerHTML = "Weak";
+			    	spanIcon.classList.add("fa-times-circle");
+						spanIcon.classList.remove("fa-check-circle");
+						element.classList.add("invalid");
+						element.classList.remove("valid");
+			    }
+				}
+			});
+	}
+	</script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="form-container">
+			<div class="form">
+				<div class="header">
+					<h1>New Account</h1>
+					<hr>
+				</div>
+
+				<div class="form-details">
+					<div id="username-container">
+						<label>Username</label>
+						<input type="text" id="username" oninput="usernameIcon()" onfocus="addFocus(this)" onfocusout="removeFocus(this)"/> <span class="fas"></span>
+						<span class="border"></span>
+						<div id="error"></div>
+					</div>
+					
+					<div id="password-container">
+						<label>Password</label>
+						<input type="password" id="password" oninput="checkPassStrength(this)" onfocus="addFocus(this)" onfocusout="removeFocus(this)"/> <span class="fas"></span>
+						<span class="border"></span>
+						<div id="strength"></div>
+					</div>
+
+				</div>
+
+				<div class="signup-container"><a href="#" class="signup">Sign Up</a></div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
