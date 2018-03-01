@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html >
+	<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	<meta charset="utf-8" />
+	<style type="text/css">
+		* {box-sizing: border-box}
+		body {
+			font-family: 'Open Sans', sans-serif;
+			margin: 0;
+		}
+		
+		.mySlides {display: none;}
+
+		h3 {
+			margin: 0;
+			font-size: 16px;
+			font-weight: normal;
+		}
+
+		.full-slideshow {
+			width: 100%;
+			height: 100%;
+			position:fixed;
+			border: 1px solid #999999;
+		}
+
+		.slideshow-container {
+		  width:85%;
+		  position: relative;
+		  float: left;
+		}
+
+		.img-container {
+			width: 60%;
+			float: left;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		img { width: 50%; }
+
+		.counter {
+			position: absolute;
+	    right: -105px;
+	    top: 45px;
+	    width: 50%;
+		}
+
+		.numbertext {
+		  color: #e50e63;
+		  font-size: 18px;
+		  padding: 8px 12px;
+		  display: inline-block;
+		}
+
+		.numbertext span {
+			font-size: 24px;
+			vertical-align: top;
+		  font-weight: bold;
+		}
+
+		.arrows {display:inline-block;}
+		.prev, .next {
+		  cursor: pointer;
+		  top: 50%;
+		  width: auto;
+		  padding: 5px;
+		  margin-top: -22px;
+		  color: #e50e63;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		}
+
+		.description {
+			width: 40%;
+			float:right;
+			margin-top: 120px;
+		}
+
+		.clearfix {clear: both;}
+
+		.text {
+		  color: #333333;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  bottom: 8px;
+		  width: 100%;
+		}
+
+		.related-container {
+			width: 15%;
+			float: right;
+			height:100%;
+			overflow: auto;
+			border-left: 1px solid #999999;
+			padding: 30px;
+			text-align: center;
+			font-size: 12px;
+		}
+
+		.related-container .header {
+			border-bottom: 1px dashed #999999;
+			display: inline-block;
+			margin-bottom: 30px;
+		}
+
+		.article {
+			padding: 20px 0;
+			border-bottom: 1px solid #999999;
+		}
+
+		.article:last-child { border: 0; }
+
+		.category {
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #e50e63;
+			display: block;
+			margin: 6px 0;
+		}
+
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+	</style>
+</head>
+	
+<body>
+
+	<header>
+	</header>
+
+	<section>
+	</section>
+
+
+	<div class="full-slideshow">
+		<div class="slideshow-container">
+			<div class="counter">
+				<div class="numbertext"><span>1</span> /3</div>
+				<div class="arrows">
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+			<div class="mySlides">
+				<div class="img-container fade">
+					<div class="img">
+						<img src="https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2135.jpg">
+					</div>
+				</div>
+				<div class="description fade">
+			  	<div class="text">
+			  		<h2>Moschino Fall/Winter 2018</h2>
+			  		<p>Image One</p>
+			  	</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="mySlides">
+				<div class="img-container fade">
+					<div class="img">
+						<img src="https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2144.jpg">
+					</div>
+				</div>
+				<div class="description fade">
+			  	<div class="text">
+			  		<h2>Moschino Fall/Winter 2018</h2>
+			  		<p>Image Two</p>
+			  	</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="mySlides">
+				<div class="img-container fade">
+					<div class="img">
+						<img src="https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2152.jpg">
+					</div>
+				</div>
+				<div class="description fade">
+			  	<div class="text">
+			  		<h2>Moschino Fall/Winter 2018</h2>
+			  		<p>Image Three</p>
+			  	</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="related-container">
+			<div class="header"><h3>Related Galleries</h3></div>
+
+			<div class="article">
+				<img src="https://www.savoirflair.com/wp-content/uploads/2018/02/Olivia-Palermo-at-Tommy-Hilfiger-480x720.jpg?x72908"  style="width:100%">
+				<span class="category">Celebrities &amp; Influencers</span>
+				<span class="title">What (Really) Happened in the Front Rows at Milan Fashion Week</span>
+			</div>
+
+			<div class="article">
+				<img src="https://www.savoirflair.com/wp-content/uploads/2018/02/Hilfiger-RS18-1749-480x723.jpg?x72908"  style="width:100%">
+				<span class="category">Fashion Shows</span>
+				<span class="title">From the Circus to the Speedway, Tommy Hilfiger Ramps up for SS18</span>
+			</div>
+
+			<div class="article">
+				<img src="https://www.savoirflair.com/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-1001-480x723.jpg?x72908"  style="width:100%">
+				<span class="category">Fashion Shows</span>
+				<span class="title">Where Will Every Met Gala Gown Come from This Year?</span>
+			</div>
+
+			<div class="article">
+				<img src="https://www.savoirflair.com/wp-content/uploads/2018/02/Marni-RF18-0028-480x721.jpg?x72908"  style="width:100%">
+				<span class="category">Fashion Shows</span>
+				<span class="title">In a World Divided, Marni's Study of Extreme Contrasts Feels Timely</span>
+			</div>
+
+			<div class="article">
+				<img src="https://www.savoirflair.com/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0678-480x721.jpg?x72908"  style="width:100%">
+				<span class="category">Fashion Shows</span>
+				<span class="title">Giorgio Armani Promises No Gimmicks, Only Sophisticated Clothes</span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		  var counter = document.getElementsByClassName('numbertext')[0];
+		  var slides = document.getElementsByClassName("mySlides");
+		  counter.innerHTML = "<span>" + slideIndex + "</span> /" + slides.length;
+		 // console.log(slides.length);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		 
+		  slides[slideIndex-1].style.display = "block";  
+		 
+		}
+
+
+
+
+		var header = document.querySelector('header');
+		var section = document.querySelector('section');
+		var requestURL = 'superheroes.json';
+
+		var request = new XMLHttpRequest();
+		request.open('GET', requestURL);
+		request.responseType = 'json';
+		request.send();
+
+		request.onload = function() {
+		  var superHeroes = request.response;
+		  populateHeader(superHeroes);
+		  showHeroes(superHeroes);
+		}
+
+		function populateHeader(jsonObj) {
+		  var myH1 = document.createElement('h1');
+		  myH1.textContent = jsonObj['squadName'];
+		  header.appendChild(myH1);
+
+		  var myPara = document.createElement('p');
+		  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+		  header.appendChild(myPara);
+		}
+
+		function showHeroes(jsonObj) {
+		  var heroes = jsonObj['members'];
+		      
+		  for (var i = 0; i < heroes.length; i++) {
+		    var myArticle = document.createElement('article');
+		    var myH2 = document.createElement('h2');
+		    var myPara1 = document.createElement('p');
+		    var myPara2 = document.createElement('p');
+		    var myPara3 = document.createElement('p');
+		    var myList = document.createElement('ul');
+
+		    myH2.textContent = heroes[i].name;
+		    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+		    myPara2.textContent = 'Age: ' + heroes[i].age;
+		    myPara3.textContent = 'Superpowers:';
+		        
+		    var superPowers = heroes[i].powers;
+		    for (var j = 0; j < superPowers.length; j++) {
+		      var listItem = document.createElement('li');
+		      listItem.textContent = superPowers[j];
+		      myList.appendChild(listItem);
+		    }
+
+		    myArticle.appendChild(myH2);
+		    myArticle.appendChild(myPara1);
+		    myArticle.appendChild(myPara2);
+		    myArticle.appendChild(myPara3);
+		    myArticle.appendChild(myList);
+
+		    section.appendChild(myArticle);
+		  }
+		}
+
+	</script>
+
+</body>
+</html>

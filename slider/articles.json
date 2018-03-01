@@ -1,0 +1,503 @@
+
+{
+  "articles" : [
+    {
+      "articleTitle" : "What Do Jackie O, Aliens, and Lichtenstein Have in Common?",
+      "articleCategory": "Fashion Shows",
+      "gallery" : [
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2135.jpg",
+            "description": "image one"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2144.jpg",
+            "description": "image two"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2152.jpg",
+            "description": "image three"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2162.jpg",
+            "description": "image four"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2170.jpg",
+            "description": "image five"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2182.jpg",
+            "description": "image six"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2189.jpg",
+            "description": "image seven"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2209.jpg",
+            "description": "image eight"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2218.jpg",
+            "description": "image nine"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Moschino-RF18-2228.jpg",
+            "description": "image ten"
+          }
+        }
+      ]
+    },
+    {
+      "articleTitle" : "What (Really) Happened in the Front Rows at Milan Fashion Week",
+      "articleCategory": "Celebrities & Influencers",
+      "gallery" : [
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Chloe-Sevigny-at-Gucci.jpg",
+            "description": "Chloë Sevigny at Gucci Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Susie-Bubble-at-Gucci.jpg",
+            "description": "Susie Bubble at Gucci Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Rowan-Blanchard-at-Gucci.jpg",
+            "description": "Rowan Blanchard at Gucci Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Chloe-Grace-Moretz-at-Fendi.jpg",
+            "description": "Chloë Grace Moretz at Fendi Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Rita-Ora-at-Prada.jpg",
+            "description": "Rita Ora at Prada Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Olivia-Palermo-and-Johannes-Huebl-at-Tods.jpg",
+            "description": "Olivia Palermo and Johannes Huebl at Tod’s Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giovanna-Battaglia-at-Yoox-event.jpg",
+            "description": "Giovanna Battaglia at a YOOX event "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Chloe-Grace-Moretz-at-Yoox-event.jpg",
+            "description": "Chloë Grace Moretz at a YOOX event "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Millie-Bobby-Brown-at-the-Moncler-Genius-event.jpg",
+            "description": "Millie Bobby Brown at Moncler Genius "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Naomi-Campbell-at-the-Moncler-Genius-event.jpg",
+            "description": "Naomi Campbell at Moncler Genius "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Shailene-Woodley-at-Salvatore-Ferragamo.jpg",
+            "description": "Shailene Woodley at Salvatore Ferragamo Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Eva-Herzigova-at-Tommy-Hilfiger.jpg",
+            "description": "Eva Herzigova  at Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Caro-Daur-at-Tommy-Hilfiger.jpg",
+            "description": "Caro Daur at Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Olivia-Palermo-at-Tommy-Hilfiger.jpg",
+            "description": "Olivia Palermo at Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Bar-Refaeli-at-Tommy-Hilfiger.jpg",
+            "description": "Bar Refaeli at Tommy Hilfiger Spring/Summer 2018 "
+          }
+        }
+      ]
+    },
+    {
+      "articleTitle" : "From the Circus to the Speedway, Tommy Hilfiger Ramps up for SS18",
+      "articleCategory": "Fashion Shows",
+      "gallery" : [
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1749.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1754.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1763.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1776.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1782.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1793.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1802.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1809.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1815.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1826.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1842.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Hilfiger-RS18-1849.jpg",
+            "description": "Tommy Hilfiger Spring/Summer 2018 "
+          }
+        }
+      ]
+    },
+    {
+      "articleTitle" : "Where Will Every Met Gala Gown Come from This Year?",
+      "articleCategory": "Fashion Shows",
+      "gallery" : [
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0441.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0448.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0453.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0461.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0468.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0475.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0483.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0490.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0497.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0503.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0509.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0514.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0522.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0528.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0538.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0548.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Dolce-e-Gabb-RF18-0556.jpg",
+            "description": "Dolce & Gabbana Fall/Winter 2018 "
+          }
+        }
+      ]
+    },
+    {
+      "articleTitle" : "In a World Divided, Marni's Study of Extreme Contrasts Feels Timely",
+      "articleCategory": "Fashion Shows",
+      "gallery" : [
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0006.jpg",
+            "description": "Marni Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0016.jpg",
+            "description": "Marni Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0022.jpg",
+            "description": "Marni Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0028.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0036.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0044.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0051.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0058.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0067.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0077.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0085.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0093.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Marni-RF18-0102.jpg",
+            "description": "Marni Fall/Winter 2018 "
+          }
+        }
+      ]
+    },
+    {
+      "articleTitle" : "Giorgio Armani Promises No Gimmicks, Only Sophisticated Clothe",
+      "articleCategory": "Fashion Shows",
+      "gallery" : [
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0004.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0012.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0021.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018"
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0028.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0035.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0045.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0053.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0062.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0073.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018 "
+          }
+        },
+        {
+          "image": {
+            "src": "https://cdn1.savoirflair.com/pictures/w/1500/1/95/ffffff/wp-content/uploads/2018/02/Giorgio-Armani-RF18-0081.jpg",
+            "description": "Giorgio Armani Fall/Winter 2018 "
+          }
+        }
+      ]
+    }
+  ]
+}
