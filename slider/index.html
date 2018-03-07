@@ -10,8 +10,20 @@
 			font-family: 'Open Sans', sans-serif;
 			margin: 0;
 		}
+
+		a {
+			text-decoration: none;
+			color: #333;
+		}
 		
-		.mySlides {display: none;}
+		.mySlides 
+		{
+			display: block;
+			width: 50%;
+	    margin: 0 auto;
+		}
+
+
 
 		h3 {
 			margin: 0;
@@ -19,33 +31,49 @@
 			font-weight: normal;
 		}
 
-		.full-slideshow {
+		#full-slideshow {
 			width: 100%;
 			height: 100%;
 			position:fixed;
 			border: 1px solid #999999;
 		}
 
+		#full-slideshow.relative {position:relative;}
+
 		#slideshow-container {
-		  width:85%;
+		  width:100%;
 		  position: relative;
 		  float: left;
 		}
 
 		.img-container {
-			width: 60%;
+			width: 100%;
 			float: left;
 			text-align: center;
 			margin: 50px 0;
 		}
 
-		.img-container img { width: 50%; }
+		.img-container img { width: 100%; }
 
 		.counter {
 			position: absolute;
 	    right: -105px;
 	    top: 45px;
 	    width: 50%;
+	    display: none;
+		}
+
+		.counter-mobile {
+			display: block;
+			color: #e50e63;
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.counter-mobile span {
+			font-size: 24px;
+			vertical-align: top;
+		  font-weight: bold;
 		}
 
 		.numbertext {
@@ -62,6 +90,31 @@
 		  font-weight: bold;
 		}
 
+		.thumbnail {
+			position: relative;
+		}
+
+		.linkIcon {
+	    position: absolute;
+	    bottom: 4px;
+	    width: 40px;
+	    height: 40px;
+	    cursor: pointer;
+	    background: #e50e63;
+		}
+
+		.numImg {
+			font-size: 12px;
+	    font-weight: bold;
+	    position: absolute;
+	    width: 25px;
+	    margin: 8px;
+	    padding: .2em 0 0 0;
+	    line-height: 20px;
+	    color: #e50e63;
+	    background: white;
+		}
+
 		.arrows {display:inline-block;}
 		.prev, .next {
 		  cursor: pointer;
@@ -76,9 +129,8 @@
 		}
 
 		.description {
-			width: 40%;
+			width: 100%;
 			float:right;
-			margin-top: 120px;
 		}
 
 		.clearfix {clear: both;}
@@ -92,25 +144,35 @@
 		}
 
 		#related-container {
-			width: 15%;
+			width: 100%;
 			float: right;
 			height:100%;
-			overflow: auto;
-			border-left: 1px solid #999999;
 			padding: 30px;
 			text-align: center;
 			font-size: 12px;
+			white-space: nowrap;
+    	overflow: scroll;
+    	border-left: none;
+    	border-top: 1px solid #999999;
+    	margin-top: 60px;
 		}
 
 		#related-container .header {
 			border-bottom: 1px dashed #999999;
-			display: inline-block;
+			display: block;
+			width: 125px;
+    	margin: 0 auto;
 			margin-bottom: 30px;
 		}
 
 		.article {
 			padding: 20px 0;
-			border-bottom: 1px solid #999999;
+			width: 20%;
+			display:inline-block;
+			margin: 0 20px;
+			white-space: pre-wrap;
+			border: 0;
+			vertical-align: top;
 		}
 
 		.article:last-child { border: 0; }
@@ -142,12 +204,51 @@
 		  to {opacity: 1}
 		}
 
+		@media only screen and (min-width: 1220px) {
+			#slideshow-container {width: 85%;}
+		  #related-container {
+		  	width: 15%;
+		  	overflow: auto;
+				border-left: 1px solid #999999;
+				margin-top: 0;
+		  }
+
+		  #related-container .header {
+		  	display: inline-block;
+		  }
+		  .img-container {width: 60%;}
+		  .description {
+		  	width: 40%;
+		  	margin-top: 120px;
+		  }
+		  .mySlides{width: 100%;}
+		  .mySlides.none {display: none;}
+		  .img-container img { width: 50%; }
+
+		  .article {
+		  	display: block;
+		  	width: 100%;
+		  	margin: 0;
+		  	border-bottom: 1px solid #999999;
+		  }
+
+		  .counter-mobile {display: none;}
+		  .counter {display: block;}
+		}
+
 	</style>
 </head>
 	
 <body>
 
-	<div class="full-slideshow">
+	<header>
+	</header>
+
+	<section>
+	</section>
+
+
+	<div id="full-slideshow">
 		<div id="slideshow-container">
 			<div class="counter">
 				<div class="numbertext"><span>1</span> /10</div>
@@ -164,7 +265,29 @@
 	</div>
 
 	<script type="text/javascript">
-		var requestURL = 'articles.json';
+
+
+	go();
+	window.addEventListener('resize', go);
+
+	function go(){
+	   if(document.documentElement.clientWidth < 1220 && document.documentElement.clientHeight <= 600) {
+	     console.log("yes");
+	     var full = document.getElementById('full-slideshow');
+	     full.classList.add('relative');
+
+	     var arrowList = document.getElementsByClassName('arrows');
+	     arrowList[0].style.display = "none";  
+	   } else {
+	     console.log("no");
+	     var full = document.getElementById('full-slideshow');
+	     full.classList.remove('relative');
+	     
+	     var arrowList = document.getElementsByClassName('arrows');
+	     arrowList[0].style.display = "inline-block";  
+	   }
+	}
+		var requestURL = 'articlesList.json';
 
 		var request = new XMLHttpRequest();
 		request.open('GET', requestURL);
@@ -184,15 +307,18 @@
 
 		function populateHeader(jsonObj) {
 		  var articles = jsonObj['articles'];
-		  //console.log(articles);
+		  console.log(articles);
 		  var slideshowContainer = document.getElementById('slideshow-container');
 
 		  var gallery = articles[0].gallery;
 
 		  for (var i = 0; i < gallery.length; i++) {
 			  var element = document.createElement("div");
+			  var counterM = i+1;
 			  element.classList.add('mySlides');
-			  element.style.display = "block";  
+			 // element.style.display = "block";  
+
+		    element.insertAdjacentHTML("beforeend", "<div class='counter-mobile'><span>"+ counterM + "</span> / " + gallery.length + "</div>");
 		    element.insertAdjacentHTML("beforeend", "<div class='img-container fade'><div class='img'><img src='" + gallery[i].image.src +" '></div></div>");
 		    element.insertAdjacentHTML("beforeend", "<div class='description fade'>"+ gallery[i].image.description + "</div>");
 		    element.insertAdjacentHTML("beforeend", "<div class='clearfix'></div>");
@@ -200,46 +326,65 @@
 		    document.getElementById('slideshow-container').appendChild(element);
 		  }
 
-		  console.log(articles);
+		 
 
 		  for(var a=0; a < articles.length; a++) {
 		  	var item = document.createElement("div");
 			  item.classList.add('article');
-		    item.insertAdjacentHTML("beforeend", "<img src='" + articles[a].gallery[0].image.src +" '>");
-		    item.insertAdjacentHTML("beforeend", "<span class='category'>"+ articles[a].articleCategory + "</span>");
-		    item.insertAdjacentHTML("beforeend", "<span class='clearfix'>"+ articles[a].articleTitle + "</span>");
+		    item.insertAdjacentHTML("beforeend", "<div class='thumbnail'><a href='" + articles[a].articleLink + "'><img src='" + articles[a].gallery[0].image.src +" '></a>" + "<div class='linkIcon'><div class='numImg'>"+ articles[a].gallery.length + "</div></div></div>");
+
+		    item.insertAdjacentHTML("beforeend", "<a href='" + articles[a].articleCategoryLink + "'><span class='category'>"+ articles[a].articleCategory + "</span></a>");
+		    item.insertAdjacentHTML("beforeend", "<a href='" + articles[a].articleLink + "'><span>"+ articles[a].articleTitle + "</span></a>");
 
 		    document.getElementById('related-container').appendChild(item);
 		  }
 		}
 
 		var slideIndex = 1;
+		var slides = document.getElementsByClassName("mySlides");
 		showSlides(slideIndex);
 
 		function plusSlides(n) {
 		  showSlides(slideIndex += n);
 		  var counter = document.getElementsByClassName('numbertext')[0];
-		  var slides = document.getElementsByClassName("mySlides");
 		  counter.innerHTML = "<span>" + slideIndex + "</span> /" + slides.length;
 		 // console.log(slides.length);
 		}
 
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
+		// function currentSlide(n) {
+		//   showSlides(slideIndex = n);
+		// }
 
 		function showSlides(n) {
 		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
+		 //var slides = document.getElementsByClassName("mySlides");
 		  if (n > slides.length) {slideIndex = 1}    
 		  if (n < 1) {slideIndex = slides.length}
 		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none";  
+		     // slides[i].style.display = "none";  
+		      slides[i].classList.add('none');
 		  }
 		 
-		  slides[slideIndex-1].style.display = "block";  
+		  //slides[slideIndex-1].style.display = "block";  
+
+		  slides[slideIndex-1].classList.remove('none');
+		  console.log(slides[slideIndex-1]);
 		}
+
+
+	// go();
+	// window.addEventListener('resize', go);
+
+	// function go(){
+	//    if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+	//      console.log("yes");
+	//    } else {
+	//      console.log("no");
+	//    }
+	// }
+
+
+
 
 	</script>
 
